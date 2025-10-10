@@ -31,9 +31,9 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-[#011E5A] to-[#6C39C1] rounded-3xl p-8 md:p-12 shadow-2xl">
+        <div className="bg-gradient-to-br from-[#2E2A26] to-[#D2AB80] rounded-3xl p-8 md:p-12 shadow-2xl">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-[#F97430] text-white px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-[#C67A30] text-white px-4 py-2 rounded-full mb-4">
               <Clock className="w-5 h-5" />
               <span className="font-bold">Oferta por tempo limitado!</span>
             </div>
@@ -52,7 +52,7 @@ export default function Pricing() {
                 { value: timeLeft.seconds, label: 'Segundos' },
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-xl p-4 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-[#011E5A] mb-1">
+                  <div className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-1">
                     {String(item.value).padStart(2, '0')}
                   </div>
                   <div className="text-xs md:text-sm text-gray-600 font-semibold">{item.label}</div>
@@ -64,8 +64,8 @@ export default function Pricing() {
           <div className="bg-white rounded-2xl p-8 mb-8">
             <div className="text-center mb-6">
               <p className="text-gray-500 mb-2">De <span className="line-through">R$ 797,00</span> por apenas:</p>
-              <div className="text-5xl md:text-6xl font-bold text-[#F97430] mb-2">R$ 497,00</div>
-              <p className="text-gray-600">ou 12x de <span className="font-bold text-[#011E5A]">R$ 41,47</span></p>
+              <div className="text-5xl md:text-6xl font-bold text-[#C67A30] mb-2">R$ 497,00</div>
+              <p className="text-gray-600">ou 12x de <span className="font-bold text-[#1A1A1A]">R$ 41,47</span></p>
             </div>
 
             <div className="space-y-3 mb-6 pt-6 border-t border-gray-200">
@@ -87,7 +87,7 @@ export default function Pricing() {
 
             <a
               href="https://pay.hotmart.com/example"
-              className="block w-full bg-[#F97430] text-white text-center px-8 py-5 rounded-full font-bold text-xl hover:bg-[#e86620] transition-colors shadow-lg"
+              className="block w-full bg-[#C67A30] text-white text-center px-8 py-5 rounded-full font-bold text-xl hover:bg-[#a96326] transition-colors shadow-lg"
             >
               <span className="flex items-center justify-center gap-2">
                 Quero garantir minha vaga agora!

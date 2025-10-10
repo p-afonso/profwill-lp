@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import type React from 'react';
 import { Play } from 'lucide-react';
 
 interface VideoPlayerProps {
@@ -71,7 +72,7 @@ export default function VideoPlayer({
               src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
               alt={title}
               className="absolute inset-0 w-full h-full object-cover"
-              onError={(e) => {
+              onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
               }}
             />
@@ -79,7 +80,7 @@ export default function VideoPlayer({
               <div className="absolute inset-0 flex items-center justify-center">
                 <button
                   onClick={handlePlay}
-                  className="bg-[#F97430]/90 backdrop-blur rounded-full p-8 hover:bg-[#F97430] transition-all hover:scale-110 group"
+                  className="bg-[#C67A30]/90 backdrop-blur rounded-full p-8 hover:bg-[#C67A30] transition-all hover:scale-110 group"
                   aria-label="Play video"
                 >
                   <Play className="w-16 h-16 text-white fill-white" />
@@ -98,7 +99,7 @@ export default function VideoPlayer({
           <>
             {isLoading && (
               <div className="absolute inset-0 flex items-center justify-center bg-black">
-                <div className="animate-spin rounded-full h-16 w-16 border-4 border-[#F97430] border-t-transparent"></div>
+                <div className="animate-spin rounded-full h-16 w-16 border-4 border-[#C67A30] border-t-transparent"></div>
               </div>
             )}
             <iframe

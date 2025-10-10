@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Header serif font */
+.font-header {
+  font-family: 'Playfair Display', serif;
+}

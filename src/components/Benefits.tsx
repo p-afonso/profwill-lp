@@ -11,7 +11,7 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="bg-[#011E5A] py-20">
+    <section className="bg-[#2E2A26] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -21,14 +21,14 @@ export default function Benefits() {
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#F97430] flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#C67A30] flex-shrink-0 mt-1" />
                   <p className="text-lg text-white">{benefit}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-[#6C39C1] to-[#8b5cf6] rounded-2xl p-8 shadow-2xl">
+          <div className="bg-gradient-to-br from-[#2E2A26] to-[#D2AB80] rounded-2xl p-8 shadow-2xl">
             <h3 className="text-2xl font-bold text-white mb-4">
               Além do curso completo, você recebe bônus exclusivos
             </h3>
@@ -56,7 +56,7 @@ export default function Benefits() {
         <div className="text-center mt-12">
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-[#F97430] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#e86620] transition-colors shadow-lg"
+            className="inline-flex items-center gap-2 bg-[#C67A30] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#a96326] transition-colors shadow-lg"
           >
             Quero garantir minha vaga!
             <ArrowRight className="w-5 h-5" />

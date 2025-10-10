@@ -5,11 +5,11 @@ export default function Reels() {
   const { videos, loading } = useVideos('reels');
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 bg-coffee-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#011E5A] mb-4">
-            Dicas rápidas de <span className="text-[#F97430]">quem já corrigiu</span> milhares de redações
+          <h2 className="text-3xl md:text-4xl font-bold text-coffee-text mb-4">
+            Dicas rápidas de <span className="text-coffee-accent">quem já corrigiu</span> milhares de redações
           </h2>
           <p className="text-lg text-gray-700">
             Assista aos vídeos curtos e descubra segredos que só um ex-corretor oficial pode revelar
@@ -18,7 +18,7 @@ export default function Reels() {
 
         {loading ? (
           <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-16 w-16 border-4 border-[#F97430] border-t-transparent"></div>
+            <div className="animate-spin rounded-full h-16 w-16 border-4 border-[#C67A30] border-t-transparent"></div>
           </div>
         ) : videos.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -54,7 +54,7 @@ export default function Reels() {
         <div className="text-center mt-12">
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-[#F97430] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#e86620] transition-colors shadow-lg"
+            className="inline-flex items-center gap-2 bg-[#C67A30] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#a96326] transition-colors shadow-lg"
           >
             Quero acesso completo ao método
           </a>

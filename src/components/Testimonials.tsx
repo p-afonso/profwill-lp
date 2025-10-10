@@ -22,20 +22,20 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative bg-[#011E5A] py-20 overflow-hidden">
+    <section className="relative bg-coffee-dark py-20 overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-32 bg-white transform origin-top-left -skew-y-2"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-12">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
           Pessoas reais, como <span className="italic">você</span>, usaram o método e
         </h2>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#F97430] text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-coffee-accent text-center mb-16">
           transformaram a nota de redação.
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-xl overflow-hidden border-4 border-[#F97430] shadow-lg">
+            <div key={index} className="bg-white rounded-xl overflow-hidden border-2 border-coffee-accent shadow-lg">
               {testimonial.image ? (
                 <img
                   src={testimonial.image}
@@ -45,7 +45,7 @@ export default function Testimonials() {
               ) : (
                 <div className="p-6">
                   <div className="flex items-start gap-3 mb-4">
-                    <div className="bg-[#25D366] rounded-full p-2 flex-shrink-0">
+                    <div className="bg-[#C67A30] rounded-full p-2 flex-shrink-0">
                       <MessageCircle className="w-5 h-5 text-white" />
                     </div>
                     <div className="flex-1">
@@ -57,7 +57,7 @@ export default function Testimonials() {
                 </div>
               )}
               <div className="text-center p-4 border-t border-gray-200 bg-white">
-                <p className="font-bold text-[#011E5A]">{testimonial.name}</p>
+                <p className="font-bold text-[#1A1A1A]">{testimonial.name}</p>
                 <p className="text-sm text-gray-600">{testimonial.grade}</p>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function Testimonials() {
         <div className="text-center">
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-[#F97430] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#e86620] transition-colors shadow-lg"
+            className="inline-flex items-center gap-2 bg-[#C67A30] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#a96326] transition-colors shadow-lg"
           >
             SIM! QUERO COMEÇAR AGORA!
             <ArrowRight className="w-5 h-5" />
